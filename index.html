@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Piedra Papel o Tijeras</h1>
+    <div class="container-score">
+        <p id="player-score" class="score-name">YOU</p>
+        <p id="bot-score" class="score-name">BOT</p>
+        <h2 id="title-score">Score</h2>
+        <h2 id="score"></h2>
+    </div>
+    <div class="items">
+        <img src="paper.png" alt="Paper" onclick="game('Paper')">
+        <img src="rock.png" alt="Rock" onclick="game('Rock')">
+        <img src="scissors.png" alt="Scissors" onclick="game('Scissors')">
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
