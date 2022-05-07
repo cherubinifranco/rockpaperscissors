@@ -13,7 +13,7 @@ const updateScore = () =>{
         break;
         case 2: botChoise = "Paper"
     }
-    console.log("The bot if going to chose: " + botChoise);
+    console.log("The bot is going to chose: " + botChoise);
 }
 
 const random = (A, B) =>{
@@ -22,7 +22,8 @@ const random = (A, B) =>{
 }
 
 const msje = (A,B,C) =>{
-    console.log("SICAHR GATO " + A + " beats " + B + " you " + C);
+    alert(A + " beats " + B + " you " + C);
+    console.log(A + " beats " + B + " you " + C);
     if (C == "lose"){
         botScore++;
     } else {
@@ -32,6 +33,7 @@ const msje = (A,B,C) =>{
 
 const game = x => {
     if(x == botChoise){
+        alert("Empate");
         console.log("Empate");
     }else if (x == 'Rock' && botChoise == 'Scissors' || x == 'Paper' && botChoise == 'Rock' || x== 'Scissors' && botChoise == 'Paper'){
         msje(x,botChoise, 'win');
