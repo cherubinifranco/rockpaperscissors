@@ -53,7 +53,7 @@ h2{
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center;  
 }
 
 .items img{
@@ -61,6 +61,10 @@ h2{
     border-radius: 50%;
     margin: 20px;
     width: min(25vw, 170px);
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
 }
 
 .items img:hover{
